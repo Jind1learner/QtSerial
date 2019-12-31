@@ -16,9 +16,11 @@ QMAKE_CXXFLAGS += -std=c++0x
 
 SOURCES += main.cpp\
         comtoolwindow.cpp \
-    myserial.cpp
+    myserial.cpp \
+    clickcombobox.cpp
 
 HEADERS  += comtoolwindow.h \
-    myserial.h
+    myserial.h \
+    clickcombobox.h
 
 FORMS    += comtoolwindow.ui

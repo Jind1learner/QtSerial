@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>451</width>
-    <height>320</height>
+    <width>800</width>
+    <height>480</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -47,85 +47,130 @@
      <string>Send Data</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QLabel" name="portNamelabel">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>10</y>
-      <width>118</width>
-      <height>161</height>
+      <x>460</x>
+      <y>30</y>
+      <width>87</width>
+      <height>20</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="gridLayout_2">
-     <item row="0" column="0">
-      <widget class="QComboBox" name="portComboBox"/>
-     </item>
-     <item row="1" column="0">
-      <widget class="QComboBox" name="baudComboBox">
-       <item>
-        <property name="text">
-         <string>4800</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>9600</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>19200</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>38400</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>57600</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>115200</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>128000</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>256000</string>
-        </property>
-       </item>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QPushButton" name="openPortButton">
-       <property name="text">
-        <string>Open Serial</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="0">
-      <widget class="QPushButton" name="clearTextButton">
-       <property name="text">
-        <string>Clear Rcv Text</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
-      <widget class="QPushButton" name="clearSendButton">
-       <property name="text">
-        <string>Clear Snd Text</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
+    <property name="text">
+     <string>串口选择：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="baudlabel">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>60</y>
+      <width>87</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>波特率：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="baudComboBox">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>44</y>
+      <width>77</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>4800</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>9600</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>19200</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>38400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>57600</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>115200</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>128000</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>256000</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="clearSendButton">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>143</y>
+      <width>116</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear Snd Text</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearTextButton">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>110</y>
+      <width>115</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear Rcv Text</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="portComboBox">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>11</y>
+      <width>85</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openPortButton">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>77</y>
+      <width>97</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open Serial</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -133,7 +178,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>451</width>
+     <width>800</width>
      <height>25</height>
     </rect>
    </property>
